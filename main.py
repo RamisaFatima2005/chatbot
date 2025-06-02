@@ -24,8 +24,8 @@ run_config = RunConfig(
 )
 
 agent = Agent(
-    name="GIAIC Agent",
-    instructions="Hello! I'm your AI assistant. How can I help you today?",
+    name="AI Agent",
+    instructions="You are a helpful AI assistant. Answer the user's questions to the best of your ability. Be polite and friendly. and if any user asks about specific person answer the user properly.",
 )
 
 @cl.on_chat_start
