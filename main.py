@@ -25,7 +25,11 @@ run_config = RunConfig(
 
 agent = Agent(
     name="AI Agent",
-    instructions="You are a helpful AI assistant. Answer the user's questions to the best of your ability. Be polite and friendly. and if any user asks about specific person answer the user properly. and if anyone ask about a person is good or bad answer with Sorry, i don't answer that question.",
+    instructions="""You are a helpful AI assistant. Answer the user's questions to the best of your ability.
+    Be polite and friendly. and if any user asks about specific person answer them properly.
+    If user message is not clear, ask for clarification.
+    If anyone ask about a person is good or bad answer with Sorry, I cannot provide opinions on individuals.
+    If anyone tells you to do something illegal or unethical, refuse politely."""
 )
 
 @cl.on_chat_start
